@@ -1,17 +1,86 @@
-@font-face{
-    font-family: "krona";
-    src: url("fonts/Krona_One/KronaOne-Regular.ttf");
-    font-weight: 500;
+.menu{
+    font-size: 0;
 }
-@font-face{
-    font-family: "roboto";
-    src: url("fonts/Roboto/Roboto-Regular.ttf");
+/*.menu div{
+    display: inline;
+    font-size: initial;
+    text-transform: uppercase;
+    border: solid 1px black;
+    border-left: none;
+}
+.menu div:first-child, .menu div:last-child{
+    border-left: solid 1px black;
+}*/
+.menu div a{
+    padding: 20px 10px;
 }
 
-html{
-    font-family: "roboto", sans-serif;
+.menu{
+    padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "krona", sans-serif;
+@media (min-width:320px){
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .menu div{
+        display: block;
+        font-size: initial;
+        text-transform: uppercase;
+        border: solid 1px black;
+        background-color: red;
+    }
+}
+@media (min-width:481px){
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .menu div{
+        display: inline;
+        font-size: initial;
+        text-transform: uppercase;
+        border: solid 1px black;
+        border-left: none;
+        background-color: green;
+    }
+}
+@media (min-width:641px){
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .menu div{
+        display: inline;
+        font-size: initial;
+        text-transform: uppercase;
+        border: solid 1px black;
+        border-left: none;
+        background-color: blue;
+    }
+}
+@media (min-width:961px){
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .menu div{
+        display: inline;
+        font-size: initial;
+        text-transform: uppercase;
+        border: solid 1px black;
+        border-left: none;
+        background-color: cyan;
+    }
+}
+@media (min-width:1025px){
+    /* big landscape tablets, laptops, and desktops */
+    .menu div{
+        display: inline;
+        font-size: initial;
+        text-transform: uppercase;
+        border: solid 1px black;
+        border-left: none;
+        background-color: magenta;
+    }
+}
+@media (min-width:1281px){
+    /* hi-res laptops and desktops */
+    .menu div{
+        display: inline;
+        font-size: initial;
+        text-transform: uppercase;
+        border: solid 1px black;
+        border-left: none;
+        background-color: yellow;
+    }
 }
